@@ -93,6 +93,12 @@
           </div>
         </div>
       </div>
+      
+    </div>
+    <div class="row my-3 d-flex align-items-center">
+      <div class="col-md-12 my-2">
+        <button type="button" class="btn btn-primary btn-lg float-right">Send</button>
+      </div>
     </div>
   </form>
 </div>
