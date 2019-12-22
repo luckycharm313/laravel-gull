@@ -11365,3 +11365,14 @@ body {
   font-size: 1.1rem;
 }
 
+.loginForm {
+  background: #fff;
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 10%;
+  max-width: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+

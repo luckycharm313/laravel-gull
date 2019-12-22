@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Validator;
 use Illiminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
 
-class AdminController extends Controller
+class LoginController extends Controller
 {
   public function index() {
-    return view('admin');
+    return view('login');
 	}
 }

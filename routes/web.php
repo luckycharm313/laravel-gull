@@ -15,4 +15,10 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', 'AdminController@index')->name('vehicle');
+Route::get('/', 'LandingController@index')->name('landing');
+Route::get('/login', 'LoginController@index')->name('login');
+Route::get('/vehicle', 'VehicleController@index')->name('vehicle');
+Route::get('/addLocation', 'VehicleController@addLocation')->name('addLocation');
+Route::get('/account', 'AccountController@index')->name('account');
+Route::get('/load', 'LoadController@index')->name('load');
+Route::get('/notification', 'NotificationController@index')->name('notification');

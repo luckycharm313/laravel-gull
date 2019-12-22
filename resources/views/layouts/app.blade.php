@@ -26,6 +26,7 @@
 </head>
 <body>
     <div id="app">
+      @unless( in_array(\Route::current()->getName(), ['landing', 'login']) )
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,17 +34,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item mx-1 active">
+            <li class="nav-item mx-1 {{\Route::current()->getName() == 'vehicle' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('vehicle')}}">Find a Vehicle <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link mx-1" href="{{route('vehicle')}}">My Loads</a>
+            <li class="nav-item mx-1 {{\Route::current()->getName() == 'load' ? 'active' : ''}}">
+              <a class="nav-link mx-1" href="{{route('load')}}">My Loads</a>
             </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="{{route('vehicle')}}">Notifications</a>
+            <li class="nav-item mx-1 {{\Route::current()->getName() == 'notification' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('notification')}}">Notifications</a>
             </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="{{route('vehicle')}}">Account</a>
+            <li class="nav-item mx-1 {{\Route::current()->getName() == 'account' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('account')}}">Account</a>
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link" href="{{route('vehicle')}}">Help</a>
@@ -51,6 +52,7 @@
           </ul>
         </div>
       </nav>
+      @endunless      
       <main class="py-4">
           @yield('content')
       </main>

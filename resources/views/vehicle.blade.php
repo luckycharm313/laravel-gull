@@ -14,7 +14,7 @@
   @csrf
     <div class="row my-4">
       <div class="col-md-12">
-        <button type="button" class="btn btn-primary btn-lg">Add Locations</button>
+        <a href="{{route('addLocation')}}" class="btn btn-primary btn-lg">Add Locations</a>
       </div>
     </div>
     <div class="row my-3 d-flex align-items-center">
