@@ -20,11 +20,11 @@
     <div class="row my-3">
       <div class="col-md-6 my-2">
         <label class="mb-2">Work Email :</label>
-        <input type="text" class="form-control"  placeholder="Work Email" name="work_email">
+        <input type="email" class="form-control"  placeholder="Work Email" name="work_email">
       </div>
       <div class="col-md-6 my-2">
         <label class="mb-2">Phone # :</label>
-        <input type="text" class="form-control"  placeholder="Phone" name="phone">
+        <input type="number" class="form-control"  placeholder="Phone" name="phone">
       </div>
     </div>
   </form>
