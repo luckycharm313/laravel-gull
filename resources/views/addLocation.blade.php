@@ -83,7 +83,7 @@
         </div>
         <div class="row mt-5 mb-2">
           <div class="col-md-12 d-flex justify-content-center">
-            <button type="button" class="btn btn-primary btn-lg mx-1">Cancel</button>
+            <a href="{{route('vehicle')}}" class="btn btn-primary btn-lg mx-1">Cancel</a>
             <button type="button" class="btn btn-primary btn-lg mx-1">Save</button>
           </div>
         </div>
