@@ -22,16 +22,12 @@
         <h5 class="mb-0">Vehicle Type :</h5>
       </div>
       <div class="col-md-10 my-2">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="vehicleType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Vehicle
-          </button>
-          <div class="dropdown-menu" aria-labelledby="vehicleType">
-            <a class="dropdown-item" href="#">Vehicle 1</a>
-            <a class="dropdown-item" href="#">Vehicle 2</a>
-            <a class="dropdown-item" href="#">Vehicle 3</a>
-          </div>
-        </div>
+        <select class="form-control" id="sel1">
+          <option>Select Vehicle</option>
+          <option>Vehicle 1</option>
+          <option>Vehicle 2</option>
+          <option>Vehicle 3</option>
+        </select>
       </div>      
     </div>
     <div class="row my-3 d-flex align-items-center">
@@ -82,7 +78,13 @@
         <h5 class="mb-0">Packaging :</h5>
       </div>
       <div class="col-md-10 my-2">
-        <div class="dropdown">
+        <select class="form-control" id="sel1">
+          <option>Select Packaging</option>
+          <option>Packaging 1</option>
+          <option>Packaging 2</option>
+          <option>Packaging 3</option>
+        </select>
+        <!-- <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="vehicleType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Packaging
           </button>
@@ -91,7 +93,7 @@
             <a class="dropdown-item" href="#">Packaging 2</a>
             <a class="dropdown-item" href="#">Packaging 3</a>
           </div>
-        </div>
+        </div> -->
       </div>
       
     </div>
