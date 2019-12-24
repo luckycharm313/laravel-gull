@@ -1,11 +1,14 @@
 @extends('layouts.app')
 @section('extra_style')
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js" ></script>
+<script src="{{ asset('js/add_location.js') }}"></script>
 @endsection
 @section('content')
 <div class="container">
-  <form method="POST" action="{{ route('vehicle') }}">
+  <form method="POST" action="{{ route('vehicle') }}" id="addForm">
     @csrf
     <div class="row my-3">
       <div class="col-md-6 my-2">
@@ -35,7 +38,7 @@
         <div class="row my-2">
           <div class="col-md-12">
             <label class="mb-2">Phone # :</label>
-            <input type="text" class="form-control"  placeholder="" name="phone">
+            <input type="text" class="form-control"  placeholder="" name="phone1">
           </div>
         </div>
         <div class="row my-2">
@@ -72,7 +75,7 @@
         <div class="row my-2">
           <div class="col-md-12">
             <label class="mb-2">Phone # :</label>
-            <input type="text" class="form-control"  placeholder="" name="phone">
+            <input type="text" class="form-control"  placeholder="" name="phone2">
           </div>
         </div>
         <div class="row my-2">

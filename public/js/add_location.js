@@ -1,7 +1,10 @@
 $(document).ready(function () {
-  $("#accountForm").validate({
+  $("#addForm").validate({
     rules: {
-      phone: {
+      phone1: {
+        digits: true,
+      },
+      phone2: {
         digits: true,
       }
     }

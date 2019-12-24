@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-6 my-2">
         <label class="mb-2">Phone # :</label>
-        <input type="number" class="form-control"  placeholder="Phone" name="phone">
+        <input type="text" class="form-control"  placeholder="Phone" id="phone" name="phone">
       </div>
     </div>
   </form>
