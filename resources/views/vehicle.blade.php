@@ -5,12 +5,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
 <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js" ></script>
 
 <script src="{{ asset('js/vehicle.js') }}"></script>
 @endsection
 @section('content')
 <div class="container">
-  <form method="POST" action="{{ route('vehicle') }}">
+  <form method="POST" action="{{ route('vehicle') }}" id="vehicleForm">
   @csrf
     <div class="row my-4">
       <div class="col-md-12">
@@ -62,7 +64,7 @@
         <h5 class="mb-0">Weight(KG) :</h5>
       </div>
       <div class="col-md-10 my-2">
-        <input type="text" class="form-control"  placeholder="weight" name="load_type">
+        <input type="text" class="form-control"  placeholder="Weight" id="weight" name="weight">
       </div>
     </div>
     <div class="row my-3 d-flex align-items-center">
