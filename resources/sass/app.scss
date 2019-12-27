@@ -21,8 +21,18 @@ body {
   margin: auto;
   padding: 30px;
   border-radius: 10px;
-  margin-top: 10%;
+  margin-top: 15%;
   max-width: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.registerForm {
+  background: #fff;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 10%;
+  max-width: 600px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* This is our style for the invalid fields */
@@ -45,4 +55,22 @@ input:focus.invalid {
 
 .error.active {
   padding: 0.3em;
+}
+
+@media only screen and (max-width: 992px) {
+  .registerForm, .loginForm {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .registerForm, .loginForm {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .registerForm, .loginForm {
+    width: 95%;
+    padding: 20px 10px;
+  }
 }

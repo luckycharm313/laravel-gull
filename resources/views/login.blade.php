@@ -8,20 +8,23 @@
 @section('content')
 <div class="container">
   <div class="loginForm">
-    <form method="POST" action="{{ route('login') }}" id="loginForm">
+    <form method="POST" action="{{ route('signin') }}" id="loginForm">
     @csrf
       <div class="d-flex flex-column p-4">
         <div style="border: 1px solid black; height: 100px; width: 100px; margin: 0px auto 70px;">
         </div>
         <div class="form-group">
-          <label for="usr">Work Email:</label>
+          <label for="email">Work Email:</label>
           <input type="email" class="form-control" name="email" required>
         </div>
         <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" name="password">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" name="password" required>
         </div>
-        <a href="{{route('vehicle')}}" class="btn btn-primary btn-lg mt-5">Login</a>
+        <button type="submit" class="btn btn-primary btn-lg mt-5">Login</button>
+        @if($errors->any())
+          <div class="mt-3 error text-center">{{$errors->first()}}</div>
+        @endif
       </div>      
     </form>
   </div>

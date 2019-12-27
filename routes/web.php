@@ -16,7 +16,10 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/', 'LandingController@index')->name('landing');
-Route::get('/login', 'LoginController@index')->name('login');
+Route::get('/login', 'AuthController@login')->name('login');
+Route::post('/signin', 'AuthController@signin')->name('signin');
+Route::get('/register', 'AuthController@register')->name('register');
+Route::post('/signup', 'AuthController@signup')->name('signup');
 Route::get('/vehicle', 'VehicleController@index')->name('vehicle');
 Route::get('/addLocation', 'VehicleController@addLocation')->name('addLocation');
 Route::get('/account', 'AccountController@index')->name('account');
